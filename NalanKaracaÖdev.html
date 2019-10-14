@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Nalan Karaca 2018280068
+</title></head>
+<body>
+<h2>2019 Güz Döneminin ilk ödevi <h1>Nalan Karaca</h1> </h2>
+<label for="id1">1. sayı değerim</label>
+<input type='text' id='id1' /> 
+<br>
+<label for="id2">2. sayı değerim</label>
+<input type='text' id='id2' /> 
+<br><br>
+<button type="button" id='button' >Topla</button>
+
+<br><br>
+<div id="kutuToplam"></div>
+<script>
+var btn=document.getElementById("button");
+           
+     btn.onclick=function(){
+                var s1=Number(document.getElementById("id1").value);
+                var s2=Number(document.getElementById("id2").value);
+                var toplam=s1+s2;
+              alert("toplamın soncu:" +' '+toplam) 
+            }
+
+</script>
+<label for="id3">1. değer</label>
+<input type='text' id='id3' /> 
+<br>
+<label for="id4">2. değer</label>
+<input type='text' id='id4' /> 
+<br><br>
+<button type="button" id='yapis' value="yapis">Yapıstır</button>
+<script>
+var btn2=document.getElementById("yapis");
+		btn2.onclick=function(){
+                var s4=String(document.getElementById("id3").value);
+                var s5=String(document.getElementById("id4").value);
+                //var ad=s4+s5;
+              alert("Textlerin birleşimi :"+s4+ ' ' +s5) 
+            }
+// alıntı:https://www.yazilimkodlama.com/web/javascript-toplama-ornegi/#		
+</script>
+</body>
+</html>
+
+
+
